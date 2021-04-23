@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
                     } else {
                         intent.setData(Uri.parse("http://evening"));
                     }
+                startActivity(intent);
             }
         });
     }

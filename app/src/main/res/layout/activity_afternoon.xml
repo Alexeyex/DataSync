@@ -7,32 +7,34 @@
     tools:context=".AfternoonActivity">
 
     <TextView
-        android:id="@+id/res1"
+        android:id="@+id/afternoonSync"
         android:layout_width="150dp"
         android:layout_height="72dp"
-        android:hint="@string/res1"
+        android:hint="@string/afternoonSync"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <TextView
-        android:id="@+id/an"
+        android:id="@+id/afternoonTime"
         android:layout_width="150dp"
         android:layout_height="72dp"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@id/res1" />
+        app:layout_constraintTop_toTopOf="@id/afternoonSync" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/go"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@id/res1" />
+        app:layout_constraintTop_toTopOf="@id/afternoonSync"
+        app:layout_constraintVertical_bias="0.705" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

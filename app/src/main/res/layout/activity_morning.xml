@@ -7,24 +7,24 @@
     tools:context=".MorningActivity">
 
     <TextView
-        android:id="@+id/res3"
+        android:id="@+id/morningSync"
         android:layout_width="150dp"
         android:layout_height="72dp"
-        android:hint="@string/res3"
+        android:hint="@string/morningSync"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <TextView
-        android:id="@+id/m"
+        android:id="@+id/morningTime"
         android:layout_width="150dp"
         android:layout_height="72dp"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@id/res3" />
+        app:layout_constraintTop_toTopOf="@id/morningSync" />
 
     <Button
         android:layout_width="wrap_content"
@@ -33,6 +33,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@id/res3" />
+        app:layout_constraintVertical_bias="0.705"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintTop_toTopOf="@id/morningSync" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

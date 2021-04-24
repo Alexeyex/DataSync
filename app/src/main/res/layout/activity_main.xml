@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/res"
+        android:id="@+id/currentTime"
         android:layout_width="150dp"
         android:layout_height="72dp"
         app:layout_constraintBottom_toBottomOf="parent"

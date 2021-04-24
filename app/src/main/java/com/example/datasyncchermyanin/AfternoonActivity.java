@@ -9,7 +9,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class AfternoonActivity extends AppCompatActivity {
-    private TextView an;
+    private TextView afternoonTime;
     private SimpleDateFormat formatForDate;
 
     @Override
@@ -18,10 +18,10 @@ public class AfternoonActivity extends AppCompatActivity {
         setContentView(R.layout.activity_afternoon);
 
         formatForDate = new SimpleDateFormat("HH:mm:ss");
-        an.findViewById(R.id.an);
+        afternoonTime = findViewById(R.id.afternoonTime);
 
-        Date dateAn = new Date();
+        Date dateAfternoon = new Date();
 
-        an.setText(formatForDate.format(dateAn));
+        afternoonTime.setText(formatForDate.format(dateAfternoon));
     }
 }

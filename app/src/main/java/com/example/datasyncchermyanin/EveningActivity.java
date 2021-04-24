@@ -9,8 +9,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class EveningActivity extends AppCompatActivity {
-    private TextView e;
-    private SimpleDateFormat formatForDate;
+    private TextView eveningTime;
+    public SimpleDateFormat formatForDate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,10 +18,9 @@ public class EveningActivity extends AppCompatActivity {
         setContentView(R.layout.activity_evening);
 
         formatForDate = new SimpleDateFormat("HH:mm:ss");
-        e.findViewById(R.id.e);
+        Date dateEvening = new Date();
 
-        Date dateE = new Date();
-
-        e.setText(formatForDate.format(dateE));
+        eveningTime = findViewById(R.id.eveningTime);
+        eveningTime.setText(formatForDate.format(dateEvening));
     }
 }

@@ -10,7 +10,7 @@ import java.util.Date;
 
 public class MorningActivity extends AppCompatActivity {
 
-    private TextView m;
+    private TextView morningTime;
     private SimpleDateFormat formatForDate;
 
     @Override
@@ -18,11 +18,11 @@ public class MorningActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_morning);
         formatForDate = new SimpleDateFormat("HH:mm:ss");
-        m.findViewById(R.id.m);
+        morningTime = findViewById(R.id.morningTime);
 
-        Date dateM = new Date();
+        Date dateMorning = new Date();
 
-        m.setText(formatForDate.format(dateM));
+        morningTime.setText(formatForDate.format(dateMorning));
 
     }
 }

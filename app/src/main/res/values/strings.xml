@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">DataSyncChermyanin</string>
     <string name="sync_btn">Синхронизация</string>
-    <string name="res1">Днём</string>
-    <string name="res2">До обеда</string>
-    <string name="res3">После ночной</string>
+    <string name="morningSync">Утренняя обработка</string>
+    <string name="afternoonSync">Дневная обработка</string>
+    <string name="eveningSync">Вечерняя обработка</string>
     <string name="go">Запуск</string>
 </resources>

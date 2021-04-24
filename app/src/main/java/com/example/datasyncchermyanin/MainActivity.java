@@ -20,14 +20,14 @@ import java.util.concurrent.TimeUnit;
 public class MainActivity extends AppCompatActivity {
     private Button syncBtn;
     private SimpleDateFormat formatForDate;
-    private TextView res;
+    private TextView currentTime;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         syncBtn = findViewById(R.id.syncBtn);
-        res = findViewById(R.id.res);
+        currentTime = findViewById(R.id.currentTime);
         formatForDate = new SimpleDateFormat("HH", Locale.getDefault());
         int time = Integer.parseInt(formatForDate.format(Calendar.getInstance().getTime()));
 
@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
                     } else {
                         intent.setData(Uri.parse("http://evening"));
                     }
+                startActivity(intent);
             }
         });
     }
